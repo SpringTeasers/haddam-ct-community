@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Haddam, Connecticut — Community Site · Design Tokens
+   Source: design/color-palette.md §2 (pasted verbatim) + style-guide.md §2–3
+   Rule: no raw hex outside this file. Exceptions: 1px borders, 24x24 icon grid.
+   ========================================================================== */
+
+:root{
+  /* ---- Brand / civic ---- */
+  --primary:        #14425F;   /* Connecticut River blue */
+  --primary-hover:  #0E3149;
+  --primary-active: #0A2436;
+  --primary-tint:   #E7EFF5;
+  --on-primary:     #FFFFFF;   /* 10.7:1 on --primary */
+  --secondary:      #334155;
+  --accent:         #555347;   /* Higganum granite / axe rock */
+  --accent-tint:    #F1F0EC;
+  --on-accent:      #FFFFFF;   /* 7.7:1 on --accent */
+
+  /* ---- Text ---- */
+  --text-strong:  #111827;
+  --text:         #1F2937;
+  --text-muted:   #4B5563;
+  --text-on-dark: #F1F5F9;     /* 9.7:1 on --surface-strong */
+
+  /* ---- Surfaces ---- */
+  --surface:        #FFFFFF;
+  --surface-alt:    #F8FAFC;
+  --surface-strong: #14425F;
+
+  /* ---- Lines ---- */
+  --border:        #D1D5DB;
+  --border-strong: #9CA3AF;
+
+  /* ---- Links ---- */
+  --link:         #14425F;
+  --link-hover:   #0E3149;
+  --link-visited: #4A3B63;
+
+  /* ---- Semantic ---- */
+  --info:      #1D4ED8;
+  --success:   #15803D;
+  --warning:   #B45309;
+  --danger:    #B91C1C;
+  --on-danger: #FFFFFF;
+  --focus:        #B45309;
+  --focus-on-dark: #FBBF24;
+
+  /* ---- Neutral ramp ---- */
+  --grey-50:#F8FAFC; --grey-100:#F1F5F9; --grey-200:#E2E8F0; --grey-300:#D1D5DB;
+  --grey-400:#9CA3AF; --grey-500:#6B7280; --grey-600:#4B5563; --grey-700:#374151;
+  --grey-800:#1F2937; --grey-900:#111827;
+
+  /* ---- Typography ---- */
+  --font-sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-display: 2.25rem;
+  --fs-h1: 1.875rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 1.125rem;
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* ---- Layout ---- */
+  --container-max: 1200px;
+  --gutter: 20px;
+  --measure: 72ch;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 4px;   --space-2: 8px;   --space-3: 12px;  --space-4: 16px;
+  --space-5: 24px;  --space-6: 32px;  --space-7: 48px;  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---- Radii / elevation ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+  --border-width: 1px;
+
+  --shadow-sm: 0 1px 2px rgba(15,23,42,.06);
+  --shadow-md: 0 2px 8px rgba(15,23,42,.08);
+
+  --focus-ring: 3px solid var(--focus);
+}
+
+@media (min-width: 768px){
+  :root{ --gutter: 32px; --fs-h1: 2.25rem; }
+}
+@media (min-width: 1024px){
+  :root{
+    --gutter: 40px;
+    --fs-display: 3rem;
+    --fs-h1: 2.25rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.375rem;
+  }
+}
